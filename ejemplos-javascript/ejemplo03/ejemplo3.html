@@ -6,29 +6,29 @@
     <title>Demo JavaScript</title>
   </head>
   <body>
-    <h1>Suma de dos números</h1>
-    <p id="resultadoSuma"></p>
-    <p id="resultadoResta"></p>
-    
+    <h1>Nombres estudiuantes</h1>
+    <p id="Nombre"></p>
+    <p id="Apellido"></p>
+    <p id="completo"></p>
     <script type="text/javascript" charset="utf-8">
       function suma(a, b){
-        return a + b;
+        return a , b;
       }
 
-      function resta(a, b){
-        return a - b      
-      }
-      var entrada1 = window.prompt("Escriba el primer valor: ", "0");
-      var entrada2 = window.prompt("Escriba el segundo valor: ", "0");
+     
+      var entrada1 = window.prompt("Escriba el primer valor: ", "");
+      var entrada2 = window.prompt("Escriba el segundo valor: ", "");
     
-      var a = parseFloat(entrada1);
-      var b = parseFloat(entrada2);
+      var a = (entrada1);
+      var b = (entrada2);
       var c = suma(a, b);
-      var d = resta(a, b);
-      document.getElementById("resultadoSuma").innerHTML = "<b>La suma de valores\
- es: " + c + "</b>";
-      document.getElementById("resultadoResta").innerText = "<b>La diferencia de valores\
- es: " + d + "</b>";
+      
+      document.getElementById("Nombre").innerHTML = "<h1>Los nombres  son:\
+ es: " + a + "</h1>";
+     document.getElementById("Apellido").innerHTML = "<h2>Los apellidos  son:\
+ es: " + b + "</h2>";
+    document.getElementById("completo").innerHTML = "<h2>El nombre completo son:\
+ es: "+a+ " " + b + "</h2>";
       console.log(c);
     </script>
   </body>
