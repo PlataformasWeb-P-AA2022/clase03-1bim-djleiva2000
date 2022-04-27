@@ -4,23 +4,25 @@ $(document).ready(function() {
     var texto2 = $('#nombreUniversidad').text();
     $('#mensajeFinal').text("Su carrera es: "+ texto1 + ". Su universidad es: "
       + texto2);
-    
+
     $('#mensajeFinal').css( "color", "red" );
     console.log(texto1);
   });
-  
+
   $("h1").on( "mouseover", function() {
       $('#nombreUniversidad').css( "color", "blue" );
   });
-  
+
   $("#nombreCarrera").on( "mouseover", function() {
       $('#nombreUniversidad').css( "color", "green" );
   });
-  
+
   $("#nombreUniversidad").on( "mouseover", function() {
       $('#nombreUniversidad').css( "color", "black" );
   });
-
+  $("#nombreUniversidad").on( "mouseover", function() {
+      $('#nombreUniversidad').css( "color", "red" );
+      $('body').css( "background-color", "black" );
+  });
 
 });
-
